@@ -32,10 +32,10 @@ func main() {
 	api := r.Group("/api/")
 	{
 		api.POST("/create", ginitem.CreateItem(db))
-		api.GET("/getById/:id", GetItemById(db))
-		api.GET("/getAll", GetAll(db))
-		api.PATCH("/items/:id", editItemById(db))
-		api.PATCH("/delete/:id", deleteItemById(db))
+		//api.GET("/getById/:id", GetItemById(db))
+		//api.GET("/getAll", GetAll(db))
+		//api.PATCH("/items/:id", editItemById(db))
+		//api.PATCH("/delete/:id", deleteItemById(db))
 	}
 
 	// Chạy server trên cổng 8000
