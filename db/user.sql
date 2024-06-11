@@ -14,3 +14,4 @@ create table user
         unique (email)
 );
 
+CREATE INDEX users_email_index ON users(email)
